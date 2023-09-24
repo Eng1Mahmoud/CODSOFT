@@ -24,7 +24,7 @@ const Verification = () => {
         verification_code: sessionStorage.getItem("verification_code"),
       };
       const response = await axios.post(
-        "http://localhost:5000/api/verification",
+        "https://quizs-wg02.onrender.com/verification",
         data
       );
       setLoading(false)

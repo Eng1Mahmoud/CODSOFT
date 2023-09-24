@@ -86,7 +86,7 @@ const TestForm = () => {
     }
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/addTest",
+        "https://quizs-wg02.onrender.com/api/addTest",
         { testName, questions },
         {
           headers: {

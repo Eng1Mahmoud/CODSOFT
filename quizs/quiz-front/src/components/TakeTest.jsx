@@ -47,7 +47,7 @@ const TakeTest = () => {
     const fetchTest = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/getTestById/${quizId}`,
+          `https://quizs-wg02.onrender.com/getTestById/${quizId}`,
           {
             headers: {
               Authorization: `Bearer ${Cookies.get("token")}`,

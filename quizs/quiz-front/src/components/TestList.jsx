@@ -16,7 +16,7 @@ const TestList = () => {
     const fetchTests = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/getAllTests",
+          "https://quizs-wg02.onrender.com/api/getAllTests",
           {
             headers: {
               Authorization: `Bearer ${Cookies.get("token")}`,
