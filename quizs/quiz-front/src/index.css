@@ -698,12 +698,7 @@ footer {
   padding: 10px;
   border-top:1px solid #fff;
 }
-footer .container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-}
+
 footer .container a{
   color: white;
   text-decoration: none;
@@ -711,6 +706,9 @@ footer .container a{
   font-weight: bold;
 }
 
+footer .container a:hover{
+  color: #d65db1;
+}
 /*end footer*/
 @media (max-width: 768px) {
   .root header .menu .icon{
@@ -786,7 +784,7 @@ footer .container a{
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:15px;
+    gap:2px;
     flex-direction: column;
   }
   .home .content button {
@@ -796,13 +794,11 @@ footer .container a{
   .signin {
     grid-template-columns: 1fr;
     padding:0px;
-  }
-
-  .signup,.signin {
-    height: auto;
+     height: auto;
     justify-content: center;
     padding: 50px 15px 50px 15px;
   }
+
  
   .signup input, .signin input {
     width: 300px !important;
@@ -831,6 +827,9 @@ footer .container a{
   .take-test .question .options .option {
     
     font-size: 14px;
+  }
+  footer .container P {
+    font-size:16px ;
   }
 }
 
