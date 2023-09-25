@@ -23,7 +23,7 @@ useEffect(() => {
 },[location])
   return (
     <header className={`${className}`}>
-      <div className="logo">
+      <div className="logo" onClick={closeMenu}>
         <h1><Link to="/">Quiz</Link></h1>
       </div>
       <nav className="nav-links">
