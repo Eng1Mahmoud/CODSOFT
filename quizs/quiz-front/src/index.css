@@ -764,9 +764,9 @@ footer .container a:hover{
   .home {
 
     grid-template-columns: 1fr;
- 
+height:auto; 
     padding: 10px;
-   height:100vh;
+
   }
   .home .content {
     grid-template-columns: 1fr;
@@ -779,7 +779,7 @@ footer .container a:hover{
   }
  
   .home .content p {
-    font-size: 16px;
+    font-size: 20px;
     margin:0px;
   }
   .home .content .text .btn{
