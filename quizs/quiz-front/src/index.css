@@ -169,9 +169,7 @@ position:relative;
   display:flex;
   align-items: center;
   justify-content: flex-start;
-  gap:15px;
-
-
+gap:15px;
 }
 .home .content button {
   display:block;
@@ -186,6 +184,7 @@ position:relative;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   font-weight: bold;
+  border:none;
 }
 
 .home .content button:hover {
@@ -217,19 +216,19 @@ position:relative;
   width: 100%;
   height: auto;
 }
-.signin .content {
+.signin .content, .signup .content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.content form {
+.signin .content form, .signup .content form {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
 }
 
-.content input {
+.signin .content input, .signup .content input {
   padding: 20px;
   font-size: 15px;
   border: 1px solid #ccc;
@@ -242,18 +241,18 @@ position:relative;
   -o-border-radius: 3px;
   margin-top:20px;
 }
-.content .error {
+.signin .content .error , .signup .content .error{
   color: red;
   font-size: 12px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.content input:focus {
+.signin .content input:focus, .signup .content input:focus {
   border: 1px solid #ccc;
   box-shadow: 0 0 3px 0 #ccc;
 }
-.content button {
+.signup .content button , .signin .content button {
   padding: 10px 20px;
   font-size: 16px;
   background: linear-gradient(45deg, #d65db1, #845ec2);
@@ -270,7 +269,7 @@ position:relative;
   margin-bottom:20px;
 }
 
-.content button:hover {
+.signin .content button:hover, .signup .content button:hover {
   background: linear-gradient(45deg, #845ec2, #d65db1);
  
 }
@@ -763,7 +762,9 @@ footer .container a:hover{
     text-align: center;
   }
   .home {
+
     grid-template-columns: 1fr;
+ 
     padding: 10px;
    height:100vh;
   }
@@ -771,6 +772,7 @@ footer .container a:hover{
     grid-template-columns: 1fr;
     width: 100%;
     padding:10px;
+    margin-top:30px;
   }
   .home .content .img{
     display:none;
@@ -784,11 +786,11 @@ footer .container a:hover{
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:2px;
     flex-direction: column;
   }
   .home .content button {
     width: 100%;
+    margin:5px,0px 5px 0px; 
   }
   .signup,
   .signin {
@@ -800,8 +802,8 @@ footer .container a:hover{
   }
 
  
-  .signup input, .signin input {
-    width: 300px !important;
+  .signin .content input, .signup .content input{
+    width: 300px;
   }
 
   .container-test {
