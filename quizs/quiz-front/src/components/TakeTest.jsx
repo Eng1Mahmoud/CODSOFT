@@ -47,7 +47,7 @@ const TakeTest = () => {
     const fetchTest = async () => {
       try {
         const response = await axios.get(
-          `https://quizs-wg02.onrender.com/getTestById/${quizId}`,
+          `https://quizs-wg02.onrender.com/api/getTestById/${quizId}`,
           {
             headers: {
               Authorization: `Bearer ${Cookies.get("token")}`,
@@ -56,13 +56,13 @@ const TakeTest = () => {
         );
         setTest(response.data);
       } catch (error) {
-        console.error("Error fetching test:", error);
+      
         // Set test to null or handle error appropriately
         setTest(null);
       }
     };
     fetchTest();
-  }, [quizId]);
+  }, [navigate, quizId]);
 
   return (
     <div className="take-test">

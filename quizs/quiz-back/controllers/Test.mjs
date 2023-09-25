@@ -37,10 +37,11 @@ export const getAllTests = async (req, res) => {
 
 export const getTestById = async (req, res) => {
   const { id } = req.params;
+  console.log(id)
   try {
     const test = await Test.findById(id).populate("publisher");
     res.status(200).json(test);
   } catch (error) {
-    res.status(404).json({ message: error.message });
+    res.json({ message: error.message });
   }
 };

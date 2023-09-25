@@ -52,7 +52,7 @@ const SignUpForm = () => {
         response.data.verification_code
       );
       sessionStorage.setItem("user", JSON.stringify(response.data.user));
-      console.log("User signed up successfully:", response.data);
+     
       if (response.data.exist) {
         setTimeout(() => {
           setLoading(false);
@@ -148,7 +148,7 @@ const SignUpForm = () => {
               <ErrorMessage name="linkedin" component="div" className="error" />
             </div>
 
-            <button type="submit"> {loading ? "loading" : "Submit"}</button>
+            <button type="submit"> {loading ? "loading" : "SignUp"}</button>
           </Form>
         </Formik>
       </div>

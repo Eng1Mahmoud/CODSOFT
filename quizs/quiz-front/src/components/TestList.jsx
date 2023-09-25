@@ -10,7 +10,7 @@ const TestList = () => {
   const [tests, setTests] = useState([]);
   console.log(tests);
   useEffect(() => {
-    if( Cookies.get("token") === undefined || !Cookies.get("token") ){
+    if (Cookies.get("token") === undefined || !Cookies.get("token")) {
       navigate("/signin");
     }
     const fetchTests = async () => {
@@ -31,49 +31,52 @@ const TestList = () => {
     };
 
     fetchTests();
-  }, []); // Empty dependency array to run only on component mount
+  }, [navigate]); // Empty dependency array to run only on component mount
 
   return (
     <div className="takeTest">
       <div className="content">
         <h1>Test List</h1>
-        
         <div className="testList">
-          {tests.map((test) => (
-            <div className="test" key={test._id}>
-              <h3 className="title">{test.testName}</h3>
-              <div className="publisher">
-                <p>Published by {test.publisher.fullName}</p>
-                <div className="contact">
-                  <a
-                    href={test.publisher.twitter}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <AiFillTwitterCircle />
-                  </a>
-                  <a
-                    href={test.publisher.email}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <BiLogoGmail />
-                  </a>
-                  <a
-                    href={test.publisher.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <AiFillLinkedin />
-                  </a>
+          {tests.length === 0 ? (
+            <h2>No Tests Available</h2>
+          ) : (
+            tests.map((test) => (
+              <div className="test" key={test._id}>
+                <h3 className="title">{test.testName}</h3>
+                <div className="publisher">
+                  <p>Published by {test.publisher.fullName}</p>
+                  <div className="contact">
+                    <a
+                      href={test.publisher.twitter}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <AiFillTwitterCircle />
+                    </a>
+                    <a
+                      href={test.publisher.email}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BiLogoGmail />
+                    </a>
+                    <a
+                      href={test.publisher.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <AiFillLinkedin />
+                    </a>
+                  </div>
                 </div>
+
+                <button onClick={() => navigate(`/taketest/${test._id}`)}>
+                  Take Test
+                </button>
               </div>
-
-              <button onClick={() => navigate(`/taketest/${test._id}`)}>Take Test</button>
-
-
-            </div>
-          ))}
+            ))
+          )}{" "}
         </div>
       </div>
     </div>

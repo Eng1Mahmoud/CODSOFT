@@ -80,7 +80,7 @@ const TestForm = () => {
 
     // Check if there are no questions
     if (questions.length === 0) {
-      alert("Please add at least one question.");
+        setAddedTest({ added: true, message: "Please add at least one question.",error:true })
       setLoading(false);
       return;
     }

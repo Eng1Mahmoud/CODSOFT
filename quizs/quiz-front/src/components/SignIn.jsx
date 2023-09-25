@@ -53,6 +53,9 @@ const SignIn = () => {
           <AiOutlineClose className="close" onClick={closePopup} />
         </div>
       ) : null}
+      <div className="img">
+        <img src={signinImage} alt="signup" loading="lazy" />
+      </div>
       <div className="content">
         <Formik
           initialValues={initialValues}
@@ -74,16 +77,13 @@ const SignIn = () => {
                 type="password"
                 id="password"
                 name="password"
-                placeholder="CEnter Your Password "
+                placeholder="Enter Your Password "
               />
               <ErrorMessage name="email" component="div" className="error" />
             </div>
             <button type="submit">{loading ? "Loading" : "Login"}</button>
           </Form>
         </Formik>
-      </div>
-      <div className="img">
-        <img src={signinImage} alt="signup"  loading="lazy"/>
       </div>
     </section>
   );

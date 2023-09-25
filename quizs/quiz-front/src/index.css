@@ -165,7 +165,16 @@ position:relative;
 
   font-family: main;
 }
+.home .content .text .btn{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:15px;
+
+
+}
 .home .content button {
+  display:block;
   padding: 10px;
   font-size: 16px;
   background: linear-gradient(45deg, #d65db1, #845ec2);
@@ -176,8 +185,6 @@ position:relative;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  margin: 5px;
-  margin-top: 30px;
   font-weight: bold;
 }
 
@@ -233,6 +240,7 @@ position:relative;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+  margin-top:20px;
 }
 .content .error {
   color: red;
@@ -258,6 +266,8 @@ position:relative;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 .content button:hover {
@@ -392,7 +402,6 @@ position:relative;
 /* start list test */
 .takeTest {
   /*sugest background color*/
-
   background: linear-gradient(45deg, #d65db1, #845ec2);
   color: white;
   min-height: 100vh;
@@ -424,6 +433,12 @@ position:relative;
   -ms-perspective: 1000px;
   -o-perspective: 1000px;
   perspective-origin: 50% 50%;
+}
+.takeTest .content .testList h2{
+  padding-top:50px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
 }
 .takeTest .content .testList .test {
   background: linear-gradient(45deg, #845ec2, #d65db1);
@@ -523,6 +538,7 @@ position:relative;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+
 }
 .take-test .score-section .control button:hover {
   background: linear-gradient(45deg, #d65db1, #845ec2);
@@ -634,6 +650,7 @@ position:relative;
   -o-border-radius: 3px;
   box-shadow: 0 0 3px 0 #fff;
   border: 1px solid #fff;
+    margin-bottom:20px;
 }
 .take-test .controls button:hover {
   background: linear-gradient(45deg, #d65db1, #845ec2);
@@ -679,6 +696,19 @@ footer {
   background: linear-gradient(45deg, #845ec2, #845ec2);
   color: white;
   padding: 10px;
+  border-top:1px solid #fff;
+}
+footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+footer .container a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*end footer*/
@@ -737,7 +767,7 @@ footer {
   .home {
     grid-template-columns: 1fr;
     padding: 10px;
-  height:auto;
+   height:100vh;
   }
   .home .content {
     grid-template-columns: 1fr;
@@ -752,27 +782,32 @@ footer {
     font-size: 16px;
     margin:0px;
   }
+  .home .content .text .btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    flex-direction: column;
+  }
   .home .content button {
-    width: 90%;
+    width: 100%;
   }
   .signup,
   .signin {
     grid-template-columns: 1fr;
-    height: 80vh;
     padding:0px;
   }
-  .signup {
+
+  .signup,.signin {
     height: auto;
     justify-content: center;
     padding: 50px 15px 50px 15px;
   }
+ 
   .signup input, .signin input {
-    width: 100%;
+    width: 300px !important;
   }
 
-  .img {
-    display: none;
-  }
   .container-test {
     grid-template-columns: 1fr;
   }
@@ -783,11 +818,19 @@ footer {
     grid-template-columns: 1fr;
   }
   .take-test h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .take-test .question {
+   
     margin: 0px auto;
     padding: 20px 5px 20px 5px;
+  }
+  .take-test .question h2{
+    font-size: 16px;
+  }
+  .take-test .question .options .option {
+    
+    font-size: 14px;
   }
 }
 
