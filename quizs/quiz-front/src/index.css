@@ -783,6 +783,7 @@ height:auto;
     margin:0px;
   }
   .home .content .text .btn{
+    margin-top:30px;
     display:flex;
     align-items: center;
     justify-content: center;
