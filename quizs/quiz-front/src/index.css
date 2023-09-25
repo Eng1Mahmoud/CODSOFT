@@ -478,12 +478,22 @@ gap:15px;
   font-weight: bold;
 }
 .takeTest .content .testList .test button {
-  background-color: #845ec2;
-  border: 1px solid #fff;
+  background-color: #fff;
+  border: 1px solid #845ec2;
+  padding:10px;
+  width:120px;
+  cursor: pointer;
+  color:#845ec2;
+  font-weight: bold;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
 }
 .takeTest .content .testList .test button:hover {
-  background-color: #d65db1;
-  border: 1px solid #fff;
+  background-color:#ffffff;
+  color:#845ec2;
 }
 /*end list test */
 /* start take test  */

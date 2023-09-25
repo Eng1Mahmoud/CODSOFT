@@ -55,7 +55,7 @@ const TestList = () => {
                       <AiFillTwitterCircle />
                     </a>
                     <a
-                      href={test.publisher.email}
+                      href={`mailto:${test.publisher.email}`}
                       target="_blank"
                       rel="noreferrer"
                     >
