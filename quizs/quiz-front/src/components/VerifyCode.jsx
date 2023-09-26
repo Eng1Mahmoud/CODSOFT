@@ -3,6 +3,8 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as yup from "yup";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";
+
 const validationSchema = yup
   .object()
   .shape({ user_code: yup.string().required("User Code is required") });
@@ -12,9 +14,15 @@ const initialValues = {
 };
 
 const Verification = () => {
-  const [signUp, setSignUp] = useState(true);
+  const [signUp, setSignUp] = useState(false);
   const [loading,setLoading]=useState(false)
+    const [verifid, setVerifid ] = useState({ verifid: false, message: "" });
   const navigate = useNavigate();
+
+  // close popup
+    const closePopup = () => {
+      setVerifid({ verifid: false, message: "" });
+  };
   const handleSubmit = async (values, { resetForm }) => {
     try {
         setLoading(true)
@@ -24,7 +32,7 @@ const Verification = () => {
         verification_code: sessionStorage.getItem("verification_code"),
       };
       const response = await axios.post(
-        "https://quizs-wg02.onrender.com/verification",
+        "https://quizs-wg02.onrender.com/api/verification",
         data
       );
       setLoading(false)
@@ -32,14 +40,21 @@ const Verification = () => {
       if (response.data.verification) {
         setSignUp(true);
       }
-
-      console.log("User signed up successfully:", response.data);
+      else{
+        setVerifid({ verifid: true, message: response.data.message });
+      }
     } catch (error) {
       console.error("Error signing up:", error);
     }
   };
   return (
     <section className="verification">
+         {verifid.verifid ? (
+        <div className="popup">
+          <p> {verifid.message}</p>
+          <AiOutlineClose className="close" onClick={closePopup} />
+        </div>
+      ) : null}
       <div className="content">
         {signUp ? (
           <div className="sucsess-add">

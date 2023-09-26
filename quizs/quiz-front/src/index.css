@@ -284,6 +284,30 @@ gap:15px;
   justify-content: center;
   height: 100vh;
 }
+.verification .error{
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.verification input{
+  width: 300px;
+    padding: 20px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin-bottom:5px;
+
+}
+.verification input:focus{
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px 0 #ccc;
+}
 .verification  .sucsess-add{
   display: flex;
   align-items: center;
@@ -301,6 +325,15 @@ gap:15px;
   padding-bottom: 50px;
   color:green;
 }
+.verification .content form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+
+}
 .verification .content button {
   padding: 10px 20px;
   font-size: 16px;
@@ -314,7 +347,7 @@ gap:15px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  margin: auto;
+
 }
 /*end verification page*/
 
@@ -819,6 +852,11 @@ height:auto;
     width: 300px;
   }
 
+  .verification .content .sucsess-add{
+    width: 100%;
+    font-size: 16px;
+
+  }
   .container-test {
     grid-template-columns: 1fr;
   }

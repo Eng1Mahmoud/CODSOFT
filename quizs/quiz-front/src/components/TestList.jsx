@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const TestList = () => {
   const navigate = useNavigate();
   const [tests, setTests] = useState([]);
-  console.log(tests);
+
   useEffect(() => {
     if (Cookies.get("token") === undefined || !Cookies.get("token")) {
       navigate("/signin");
