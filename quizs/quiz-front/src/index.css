@@ -185,6 +185,7 @@ gap:15px;
   -o-border-radius: 3px;
   font-weight: bold;
   border:none;
+  width:200px;
 }
 
 .home .content button:hover {
