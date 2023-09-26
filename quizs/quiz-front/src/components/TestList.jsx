@@ -4,11 +4,11 @@ import Cookies from "js-cookie";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BiLogoGmail } from "react-icons/bi";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 const TestList = () => {
   const navigate = useNavigate();
   const [tests, setTests] = useState([]);
-
+console.log(tests)
   useEffect(() => {
     if (Cookies.get("token") === undefined || !Cookies.get("token")) {
       navigate("/signin");
@@ -45,8 +45,8 @@ const TestList = () => {
               <div className="test" key={test._id}>
                 <h3 className="title">{test.testName}</h3>
                 <div className="publisher">
-                  <p>Published by {test.publisher.fullName}</p>
-                  <div className="contact">
+                  <p>Published by {test.publisher.fullName}</p> 
+                 <div className="contact">
                     <a
                       href={test.publisher.twitter}
                       target="_blank"
@@ -68,7 +68,7 @@ const TestList = () => {
                     >
                       <AiFillLinkedin />
                     </a>
-                  </div>
+                  </div> 
                 </div>
 
                 <button onClick={() => navigate(`/taketest/${test._id}`)}>

@@ -8,5 +8,5 @@ const UserSchema = new mongoose.Schema({
     twitter: String,
     linkedin: String,
 
-});
+},{ collection: 'Users' });
 export default mongoose.model('User', UserSchema);

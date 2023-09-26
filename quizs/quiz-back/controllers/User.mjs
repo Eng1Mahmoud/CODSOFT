@@ -61,7 +61,7 @@ export const verification = (req, res) => {
 
 export const login = (req, res) => {
     const { email, password } = req.body;
-  
+  console.log(req.body);
     User.findOne({ email })
       .then((user) => {
         if (!user) {

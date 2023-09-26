@@ -9,8 +9,8 @@ const TestSchema = new mongoose.Schema({
     }],
     publisher: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'  // Reference to the User model
-    }
-});
+        ref: 'Users' 
+      }
+},{ collection: 'Tests' });
 
 export default mongoose.model('Test', TestSchema);

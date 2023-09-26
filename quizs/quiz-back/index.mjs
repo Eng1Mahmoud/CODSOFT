@@ -16,8 +16,8 @@ app.use(express.json());
 // conect db 
 
  mongoose
-  .connect(process.env.DBURL,{ useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
+  .connect(process.env.DBURL,{  useNewUrlParser: true,
+    dbName: 'Quiz'}).then(() => {
     console.log("connected to db");
   })
   .catch((err) => console.log(err)); 

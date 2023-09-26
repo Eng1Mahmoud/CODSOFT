@@ -13,7 +13,7 @@ const NaveBar = () => {
     setMenu(false);
    }
 useEffect(() => {
-    console.log(location.pathname); 
+ 
     if (location.pathname !== '/') {
         setClassName('relative-header');
       }
