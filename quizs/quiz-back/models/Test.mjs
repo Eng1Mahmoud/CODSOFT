@@ -9,7 +9,7 @@ const TestSchema = new mongoose.Schema({
     }],
     publisher: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Users' 
+        ref: 'User' 
       }
 },{ collection: 'Tests' });
 

@@ -26,10 +26,11 @@ console.log(req.user,"id")
 export const getAllTests = async (req, res) => {
   try {
     const tests = await Test.find().populate("publisher");
+    console.log(tests)
     res.status(200).json(tests);
     console.log(tests)
   } catch (error) {
-    res.status(404).json({ message: error.message });
+  console.log("error",error)
   }
 }
 

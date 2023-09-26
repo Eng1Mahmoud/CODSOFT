@@ -5,7 +5,7 @@ import verifyToken from "../controllers/jwt.mjs";
  const routerTest = Router();
 
 routerTest.post("/addTest",verifyToken, AddTest);
-routerTest.get("/getAllTests",verifyToken, getAllTests);
+routerTest.get("/getTests",verifyToken, getAllTests);
 routerTest.get("/getTestById/:id",verifyToken, getTestById);
 
 export default routerTest;
