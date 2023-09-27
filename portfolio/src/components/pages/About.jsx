@@ -53,23 +53,23 @@ export const About = () => {
                         <AnimatedElement>
                             <li>
                                 <b>Age</b>
-                                :24 Years</li>
+                                :22 Years</li>
                         </AnimatedElement>
                         <AnimatedElement>
                             <li>
                                 <b>Nationality</b>
-                                :American</li>
+                                :Egyptian</li>
                         </AnimatedElement>
                         <AnimatedElement>
                             <li>
                                 <b>Languages</b>
-                                :English, French</li>
+                                :Arabic, English</li>
                         </AnimatedElement>
                         <AnimatedElement>
                             <li>
                                 <b>Address</b>
 
-                                :121 King Street, Melbourne, Australia</li>
+                                :Egypt, 6th of October City</li>
                         </AnimatedElement>
                         <AnimatedElement>
 

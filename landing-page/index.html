@@ -1,34 +1,808 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>landing page</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <div id="app">
-      <div class="slider-container">
-        <div class="slider-container">
-          <div class="slider">
-              <div class="slide" style="background-color: #ff5733;">
-                  Slide 1
-              </div>
-              <div class="slide" style="background-color: #33ff57;">
-                  Slide 2
-              </div>
-              <div class="slide" style="background-color: #5733ff;">
-                  Slide 3
-              </div>
-          </div>
-          <div class="navigation">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-          </div>
-      </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TECHIE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="loud">
+
+        <i class="fas fa-spinner"></i>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+    <!--start header-->
+
+    <header>
+        <div class="contener">
+
+            <a href="#">TECHIE</a>
+
+            <!--start nav-->
+            <div class="nav">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#features">features</a></li>
+                    <li class="drop">
+                        <a href="#" class="d"> <i class="fas fa-caret-down d"></i>dropdoun</a>
+
+
+                        <ul>
+                            <li><a href="#faq">faq</a></li>
+                            <li><a href="#faq">faq2</a></li>
+                            <li><a href="#faq">faq3</a></li>
+                            <li><a href="#faq">faq4</a></li>
+                            <li><a href="#faq">faq5</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#contact">contact</a></li>
+
+                </ul>
+                <!--start get start-->
+                <a href="#">get started</a>
+            </div>
+            <i class="fas fa-bars"></i>
+
+        </div>
+    </header>
+    <!--end header-->
+
+    <!--start menu bar-->
+
+    <aside class="menu">
+
+        <i class="fal fa-times"></i>
+
+        <div class="link_menu">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#features">features</a></li>
+                <li class="dr">
+                    <a> <i class="fas fa-caret-down d"></i> dropdoun</a>
+
+                    <ul class="block">
+                        <li><a href="#faq">faq</a></li>
+                        <li><a href="#faq">faq2</a></li>
+                        <li><a href="#faq">faq3</a></li>
+                        <li><a href="#faq">faq4</a></li>
+                        <li><a href="#faq">faq5</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#contact">contact</a></li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+    <!--end menu bar-->
+
+
+
+    <!--start section 1-->
+
+    <section class="st" id="home">
+
+        <div class="cont">
+            <div>
+                <h1>Bettter Digital Experience With Techie</h1>
+                <p>We are team of talented designers<br> making websites with Bootstrap</p>
+                <a>get started</a>
+
+            </div>
+            <div><img src="./img/hero-img.png"></div>
+        </div>
+
+    </section>
+
+    <!--end section 1-->
+    <!--start about section-->
+    <section class="about" id="about">
+        <div class="contener">
+            <div class="content">
+                <div class="text left">
+                    <h2>Voluptatem dignissimos provident quasi corporis</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li><i class="far fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </li>
+                        <li> <i class="far fa-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate
+                            velit.</li>
+                        <li> <i class="far fa-check-circle"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute
+                            irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro
+                            dolore eu fugiat nulla pariatur.</li>
+                    </ul>
+
+                    <a>read more</a>
+
+                </div>
+                <div class="img "><img src="./img/about.jpg" class="full"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--end about section-->
+
+
+    <!--start section number -->
+
+    <section class="number" id="number">
+
+        <div class="contener">
+
+            <div class="content">
+                <div class="ch">
+
+                    <h3 data-num="231">0</h3>
+                    <span>hard workers</span>
+                </div>
+                <div class="ch">
+                    <h3 data-num="543">0</h3>
+                    <span>clintes</span>
+                </div>
+                <div class="ch">
+                    <h3 data-num="120">0</h3>
+                    <span>hour of support</span>
+                </div>
+                <div class="ch">
+                    <h3 data-num="1500">0</h3>
+                    <span>projects</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--start section number -->
+
+    <!--start servise section -->
+
+
+
+    <section class="services" id="services">
+        <div class="contener">
+
+            <h4>SERVICES</h4>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit. Quisquam quos quisquam cupiditate.
+                Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+
+            <div class="content">
+
+                <div class="item">
+                    <div class="icone">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h5>Lorem Ipsum</h5>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+
+
+                </div>
+
+                <div class="item">
+
+                    <div class="icone">
+                        <i class="fal fa-file-alt"></i>
+                    </div>
+                    <h5>Lorem Ipsum</h5>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+
+
+                </div>
+
+                <div class="item">
+
+                    <div class="icone">
+                        <i class="fab fa-affiliatetheme"></i>
+                    </div>
+                    <h5>Lorem Ipsum</h5>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+
+
+                </div>
+
+                <div class="item">
+
+                    <div class="icone">
+                        <i class="fas fa-american-sign-language-interpreting"></i>
+                    </div>
+
+                    <h5>Lorem Ipsum</h5>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+
+
+                </div>
+
+                <div class="item">
+
+                    <div class="icone">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h5>Lorem Ipsum</h5>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+
+
+                </div>
+
+                <div class="item">
+
+                    <div class="icone">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h5>Lorem Ipsum</h5>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--end servise section-->
+
+    <!--start features section-->
+
+    <section class="FEATURES" id="features">
+        <div class="contener">
+
+            <h4>FEATURES</h4>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+            <div class="content">
+
+                <div class="tex">
+
+                    <div class="items">
+
+                        <div class="log"> <i class="fas fa-anchor"></i></div>
+                        <div class="discription">
+                            <h6>Est labore ad</h6>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+
+
+                    <div class="items">
+
+                        <div class="log"> <i class="fas fa-hat-wizard"></i></div>
+                        <div class="discription">
+                            <h6>Est labore ad</h6>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+
+                    <div class="items">
+
+                        <div class="log"> <i class="fab fa-stumbleupon-circle"></i></div>
+                        <div class="discription">
+                            <h6>Est labore ad</h6>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+
+
+                    <div class="items">
+
+                        <div class="log"> <i class="fab fa-algolia"></i></div>
+                        <div class="discription">
+                            <h6>Est labore ad</h6>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--start img features-->
+                <div class="img">
+                    <img src="./img/features.svg" alt="features">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--end features section-->
+
+
+
+    <!--start portfolio section-->
+
+    <section class="portfolio" id="portfolio">
+        <div class="contener">
+
+            <h4>PORTFOLIO</h4>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+            <div class="bt">
+                <ul class="select">
+                    <li class="active" data-type="all">all</li>
+                    <li data-type="app">app</li>
+                    <li data-type="card">card</li>
+                    <li data-type="web">web</li>
+                </ul>
+            </div>
+
+            <div class="content">
+
+                <div class="imgs all app card ">
+                    <img src="./img/portfolio/portfolio-9.jpg">
+
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+                <div class="imgs all web app">
+                    <img src="./img/portfolio/portfolio-3.jpg">
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+                <div class="imgs all card web">
+                    <img src="./img/portfolio/portfolio-4.jpg">
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+                <div class="imgs all web">
+                    <img src="./img/portfolio/portfolio-5.jpg">
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+                <div class="imgs all app">
+                    <img src="./img/portfolio/portfolio-6.jpg">
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+                <div class="imgs all web app">
+                    <img src="./img/portfolio/portfolio-7.jpg">
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+                <div class="imgs all card">
+                    <img src="./img/portfolio/portfolio-8.jpg">
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+                <div class="imgs all app">
+                    <img src="./img/portfolio/portfolio-1.jpg">
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+
+                <div class="imgs all card">
+                    <img src="./img/portfolio/portfolio-2.jpg">
+                    <div class="hover"><i class="fad fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--end portfolio section-->
+
+    <!--start  PRICING section-->
+
+    <section class="PRICING">
+        <div class="contener">
+
+            <h4>PRICING </h4>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+
+            <div class="content">
+
+                <div class="item">
+
+                    <div class="he">frre</div>
+
+                    <p> <sup>$</sup>23 </p>
+                    <ul>
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Massa ultricies mi</li>
+                    </ul>
+
+
+                    <div><a href="#">buy now</a></div>
+
+                </div>
+
+
+                <div class="item">
+
+                    <div class="he">Business</div>
+
+                    <p> <sup>$</sup>23 </p>
+                    <ul>
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Massa ultricies mi</li>
+                    </ul>
+
+
+                    <div><a href="#">buy now</a></div>
+
+                </div>
+
+
+                <div class="item">
+
+                    <div class="he">Developer</div>
+
+                    <p> <sup>$</sup>23 </p>
+                    <ul>
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Massa ultricies mi</li>
+                    </ul>
+
+
+                    <div><a href="#">buy now</a></div>
+
+                </div>
+
+
+
+
+                <div class="item">
+
+                    <div class="he">Ultimate</div>
+
+                    <p> <sup>$</sup>23 </p>
+                    <ul>
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Massa ultricies mi</li>
+                    </ul>
+
+
+                    <div class="buy"><a href="#">buy now</a></div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--end  PRICING section-->
+
+    <!--start faq section-->
+    <section class="faq" id="faq">
+
+        <div class="contener">
+
+            <h4>FREQUENTLY ASKED QUESTIONS</h4>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+
+            <div class="qustion">
+
+                <div class="ask">
+
+                    <div class="head-text">
+                        <div> <i class="fas fa-question"></i> Non consectetur a erat nam at lectus urna duis?</div>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+
+                    <div class="faq-content">
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </div>
+
+                </div>
+
+
+                <div class="ask">
+
+                    <div class="head-text">
+                        <div> <i class="fas fa-question"></i>Non consectetur a erat nam at lectus urna duis?</div>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+
+                    <div class="faq-content">
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </div>
+
+                </div>
+
+                <div class="ask">
+
+                    <div class="head-text">
+                        <div> <i class="fas fa-question"></i>Non consectetur a erat nam at lectus urna duis?</div>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+
+                    <div class="faq-content">
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </div>
+
+                </div>
+
+
+
+                <div class="ask">
+
+                    <div class="head-text">
+                        <div> <i class="fas fa-question"></i>Non consectetur a erat nam at lectus urna duis?</div>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+
+                    <div class="faq-content">
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </div>
+
+                </div>
+
+                <div class="ask">
+
+                    <div class="head-text">
+                        <div> <i class="fas fa-question"></i>Non consectetur a erat nam at lectus urna duis?</div>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+
+                    <div class="faq-content">
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--end faq section-->
+
+
+    <!--start contact section-->
+
+    <section class="contact" id="contact">
+        <div class="contener">
+
+            <h4>PRICING </h4>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+            <div class="content">
+
+                <div class="one">
+                    <i class="far fa-map-marker-alt"></i>
+                    <h6>Our Address</h6>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+
+                </div>
+                <div class="tow">
+                    <i class="fal fa-envelope"></i>
+                    <h6>Email Us</h6>
+                    <p>contact@example.com2</p>
+                </div>
+                <div class="thre">
+                    <i class="fas fa-phone-volume"></i>
+                    <h6>Call Us</h6>
+                    <p>+1 5589 55488 55</p>
+                </div>
+            </div>
+
+            <div class="content2">
+                <div class="ifram">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="100%" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe><a href="https://putlocker-is.org"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            </style>
+                            <a href="https://www.embedgooglemap.net"></a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+
+                    <input type="text" placeholder="your name">
+                    <input type="email" placeholder="your email">
+                    <input type="text" placeholder="subjet">
+                    <textarea placeholder="message"></textarea>
+                    <input type="submit" placeholder="your name">
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!--end contact section-->
+
+
+
+    <!--start footer section-->
+
+    <footer>
+
+        <div class="contener">
+
+            <div class="content">
+
+                <!--start techie-->
+                <div class="TECHIE">
+                    <h5>TECHIE</h5>
+
+                    <p>A108 Adam Street<br>
+                        New York, NY 535022<br>
+                        United States</p>
+
+
+                    <p>
+
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                    </p>
+                </div>
+
+                <!--end techie-->
+
+                <!--start links-->
+                <div class="linkes">
+
+                    <div class="useful">
+
+                        <h5>Useful Links</h5>
+
+                        <ul>
+
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> home</a></li>
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> about</a></li>
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> services</a></li>
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> portfolio</a></li>
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> team</a></li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="web">
+
+                        <h5>Our Services</h5>
+
+                        <ul>
+
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> Web Design</a></li>
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> Web Development</a></li>
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> Product Management </a></li>
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> Marketing</a></li>
+                            <li> <i class="fas fa-chevron-right"></i><a href="#"> Graphic Design</a></li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+                <!--end links-->
+
+
+                <!--start serch-->
+
+                <div class="serch">
+                    <h5>Join Our Newsletter</h5>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+
+                    <div class="serch-item">
+                        <input type="search">
+                        <input type="submit" placeholder="search">
+                    </div>
+                </div>
+
+                <!--end serch-->
+
+
+            </div>
+
+            <hr>
+
+            <div class="copy-right">
+
+                <div class="copy">
+                    <p>&copy;Copyright <strong>Techie</strong>. All Rights Reserved<br>
+                        Designed by <strong><q>mahmoud mohamed</q></strong></p>
+                </div>
+
+                <div class="social">
+
+                    <ul>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-whatsapp"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="scroll-top">
+
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+    <!--end footer section-->
+
+</body>
+
+<script src="./javascript/script.js"></script>
+
 </html>
