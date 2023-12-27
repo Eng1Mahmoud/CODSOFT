@@ -61,7 +61,7 @@ export const Home = () => {
                     }
                     // Adjust the animation duration as needed
                 >
-                  I am a skilled front-end developer with expertise in HTML, CSS, JavaScript, Bootstrap, React, MUI, Redux, Sass, and TypeScript. I have experience creating responsive and visually appealing websites and web applications that provide an exceptional user experience. I am committed to delivering high-quality work and exceeding my clients' expectations, and I am always looking for new opportunities to collaborate with businesses and individuals in need of top-tier front-end development services. Whether you need help with a small project or a large-scale web application, I have the skills and expertise to deliver exceptional results on time and within budget. 🍬
+I am an experienced front-end developer with expertise in HTML, CSS, JavaScript, Bootstrap, React, MUI, Redux, Sass, and TypeScript. I create visually appealing and responsive websites and web applications that provide an exceptional user experience. I am committed to delivering high-quality work and exceeding my clients’ expectations. I am always looking for new opportunities to collaborate with businesses and individuals in need of top-tier front-end development services.  🍬
                 </motion.p>
                 <motion.ul initial="hidden" animate="visible"
                     variants={ulVariants}
