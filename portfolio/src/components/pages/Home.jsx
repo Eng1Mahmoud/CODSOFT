@@ -61,7 +61,7 @@ export const Home = () => {
                     }
                     // Adjust the animation duration as needed
                 >
-                    I'm Mahmoud Mohamed, a dedicated MERN stack developer with expertise in React.js, JavaScript, Node.js, Express, and MongoDB. I thrive on tackling complex challenges, continually learning new technologies, and delivering high-quality solutions. Let's create something amazing together! 🍬
+                  I am a skilled front-end developer with expertise in HTML, CSS, JavaScript, Bootstrap, React, MUI, Redux, Sass, and TypeScript. I have experience creating responsive and visually appealing websites and web applications that provide an exceptional user experience. I am committed to delivering high-quality work and exceeding my clients' expectations, and I am always looking for new opportunities to collaborate with businesses and individuals in need of top-tier front-end development services. Whether you need help with a small project or a large-scale web application, I have the skills and expertise to deliver exceptional results on time and within budget. 🍬
                 </motion.p>
                 <motion.ul initial="hidden" animate="visible"
                     variants={ulVariants}

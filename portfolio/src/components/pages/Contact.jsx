@@ -29,6 +29,7 @@ export const Contact = () => {
             message: values.message
         }, import.meta.env.VITE_EMAILJS_USER_ID).then(() => {
             setIsSuccess(true); // Set success state to true
+            console.log("success");
 
         }).catch(() => {
             setIsError(true); // Set error state to true
