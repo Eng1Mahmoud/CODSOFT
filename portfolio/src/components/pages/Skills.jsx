@@ -70,7 +70,7 @@ export const Skills = () => {
         <>
            <div className="skills">
             <Overlay />
-            <Title title="Hard Skills" />
+            <Title title="Skills" />
             <div className="skills_content">
                 {skillKeys.map((key, index) => (
                     <Skill key={index} skillKey={key} />
