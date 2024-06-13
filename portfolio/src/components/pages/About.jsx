@@ -1,14 +1,25 @@
-import {Overlay} from "../Overlay"
+import { Overlay } from "../Overlay"
 import image from "../../assets/profile.webp"
 import resume from "../../assets/Resume.pdf"
-import {BsCodeSlash} from "react-icons/bs"
-import {FaPaintBrush} from "react-icons/fa"
-import {Title} from "../Title"
-import {useEffect, useState} from 'react';
-import {AnimatedElement} from "../MotionElement"
+import { BsCodeSlash } from "react-icons/bs"
+import { FaPaintBrush } from "react-icons/fa"
+import { Title } from "../Title"
+import { useEffect, useState } from 'react';
+import { AnimatedElement } from "../MotionElement"
+
 export const About = () => {
     const [name, setName] = useState('');
     const typedName = 'Mahmoud Mohamed'; // Replace with your name
+
+    // Function to calculate age
+    const calculateAge = (birthDate) => {
+        const dob = new Date(birthDate);
+        const diff_ms = Date.now() - dob.getTime();
+        const age_dt = new Date(diff_ms);
+
+        return Math.abs(age_dt.getUTCFullYear() - 1970);
+    }
+
     useEffect(() => {
         let currentIndex = 0;
         const interval = setInterval(() => {
@@ -16,23 +27,23 @@ export const About = () => {
                 setName(typedName.slice(0, currentIndex));
                 currentIndex++;
             } else {
-
                 currentIndex = 0;
             }
         }, 300);
-        // Adjust the typing speed (milliseconds)
+
 
         // Cleanup interval on unmount
-        return() => clearInterval(interval);
+        return () => clearInterval(interval);
     }, []);
+
     return (
         <div className="about">
-            <Overlay/>
-            <Title title="About Me"/>
+            <Overlay />
+            <Title title="About Me" />
             <div className="content">
                 <div className="img">
                     <img src={image}
-                        alt="mahmoud mohamed"/>
+                        alt="mahmoud mohamed" />
                     <div className='right'></div>
                     <div className="left"></div>
                 </div>
@@ -42,7 +53,11 @@ export const About = () => {
                     </h3>
                     <AnimatedElement>
 
-                        <p>I'm Mahmoud Mohamed, a dedicated MERN stack developer with expertise in React.js, JavaScript, Node.js, Express, and MongoDB. I thrive on tackling complex challenges, continually learning new technologies, and delivering high-quality solutions. Let's create something amazing together! 🍬</p>
+                        <p>
+                            Hi My name is Mahmoud
+                            a graduate of the Faculty of Computers and Artificial Intelligence. I have extensive experience in the field of the front end, and in addition to that, good experience in the field of the back end. (React Developer - Nodejs )
+                            I work currently in an Egyptian startup company.
+                        </p>
                     </AnimatedElement>
                     <ul>
                         <AnimatedElement>
@@ -53,7 +68,7 @@ export const About = () => {
                         <AnimatedElement>
                             <li>
                                 <b>Age</b>
-                                :22 Years</li>
+                                :{calculateAge('2001-03-26')} Years</li> {/* Call the function here */}
                         </AnimatedElement>
                         <AnimatedElement>
                             <li>
@@ -87,41 +102,37 @@ export const About = () => {
             <AnimatedElement>
                 <h1>SERVICES</h1>
             </AnimatedElement>
-            <div className="devider"></div>
             <div className="services">
                 <AnimatedElement>
                     <div className="service">
-                        <FaPaintBrush className="icon"/>
+                        <FaPaintBrush className="icon" />
                         <h3>Web Design</h3>
-                        <hr/>
-                        <p>Web design is the art of creating visually striking and intuitive website interfaces that captivate users and convey a  identity.</p>
-                        <p>It involves meticulous attention to layout, color, typography, and user experience to ensure websites are not only attractive but also user-friendly.</p>
-
+                        <hr />
+                        <p>I receive designs from designers and convert them into fully functional, responsive websites using front-end technologies such as HTML, CSS, and JavaScript.</p>
+                        <p>This process involves meticulous attention to layout, color, typography, and user experience to ensure the final product is both visually appealing and user-friendly.</p>
                     </div>
                 </AnimatedElement>
                 <AnimatedElement>
-                    <div className="service">
-                        <BsCodeSlash className="icon"/>
-
-                        <h3>Front End Development</h3>
-                        <hr/>
-                        <p>Front-end development transforms static web designs into dynamic, interactive, and responsive websites by using HTML, CSS, and JavaScript.</p>
-                        <p>Front-end developers focus on optimizing user interface and functionality, ensuring seamless user experiences across various devices and browsers.</p>
-                    </div>
-                </AnimatedElement>
+        <div className="service">
+            <BsCodeSlash className="icon" />
+            <h3>Front End Development</h3>
+            <hr />
+            <p>As a front-end developer, I specialize in transforming static designs into dynamic, interactive, and responsive websites. Utilizing HTML, CSS, and JavaScript, I ensure that each website not only looks stunning but also performs seamlessly across all devices and browsers.</p>
+            <p>My expertise includes integrating with back-end systems and working with APIs to create cohesive and functional web applications. I focus on delivering an optimal user interface and experience, implementing best practices for accessibility, performance, and scalability.</p>
+        </div>
+    </AnimatedElement>
                 <AnimatedElement>
                     <div className="service">
-                        <BsCodeSlash className="icon"/>
-                        <h3>Mern Stack Development</h3>
-                        <hr/>
-                        <p>MERN stack development leverages MongoDB, Express.js, React, and Node.js to build scalable and real-time web applications.</p>
-                        <p>MERN stack developers work on both the front-end and back-end, enabling the creation of feature-rich and highly customizable web applications that excel in modern web environments.
-
-
-                        </p>
+                        <BsCodeSlash className="icon" />
+                        <h3>Full Stack Development</h3>
+                        <hr />
+                        <p>As a full stack developer, I specialize in building comprehensive web applications using Next.js and the MERN stack (MongoDB, Express.js, React, Node.js).</p>
+                        <p>I take designs provided by designers and convert them into fully responsive and professional websites. My role involves working on both the front-end and back-end, ensuring robust, scalable, and high-performance web solutions.</p>
+                        <p>Using Next.js, I create server-side rendered applications and API routes, while with the MERN stack, I build dynamic, real-time applications that excel in modern web environments. My focus is on delivering feature-rich and highly customizable web applications tailored to meet client needs.</p>
                     </div>
                 </AnimatedElement>
             </div>
+
         </div>
     )
 }

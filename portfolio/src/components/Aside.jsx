@@ -63,7 +63,7 @@ export const Aside = () => {
                 </div>
             </div>
 
-            <p className="copyRight">©2023 Mahmoud Mohamed</p>
+            <p className="copyRight">© ${new Date().getFullYear()} Mahmoud Mohamed</p>
         </aside>
     );
 };

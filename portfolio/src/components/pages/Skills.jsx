@@ -6,6 +6,8 @@ import { BiLogoNodejs } from "react-icons/bi"
 import { SiExpress } from "react-icons/si"
 import { BiLogoMongodb } from "react-icons/bi"
 import { BiLogoTypescript } from "react-icons/bi"
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
 import { Title } from "../Title"
 import { motion } from "framer-motion";
 import { useEffect } from "react";
@@ -14,16 +16,20 @@ import { useInView } from 'react-intersection-observer';
 const skills = {
     html: <FaHtml5 className="icon" />,
     css: <FaCss3Alt className="icon" />,
-    js: <FaJsSquare className="icon" />,
+    Javascript: <FaJsSquare className="icon" />,
+    nextJs: <TbBrandNextjs className="icon" />,
+    tailwind: <SiTailwindcss className="icon" />,
     bootstrap: <FaBootstrap className="icon" />,
     sass: <FaSass className="icon" />,
-    react: <FaReact className="icon" />,
+    React: <FaReact className="icon" />,
     mui: <SiMui className="icon" />,
-    redux: <BiLogoRedux className="icon" />,
+    "redux redux-toolkit": <BiLogoRedux className="icon" />,
     nodeJs: <BiLogoNodejs className="icon" />,
     Express: <SiExpress className="icon" />,
-    mongodb: <BiLogoMongodb className="icon" />,
+    "mongodb-Mongoose": <BiLogoMongodb className="icon" />,
     typescript: <BiLogoTypescript className="icon" />,
+
+
 };
 
 // eslint-disable-next-line react/prop-types
@@ -61,14 +67,16 @@ export const Skills = () => {
     const skillKeys = Object.keys(skills);
 
     return (
-        <div className="skills">
+        <>
+           <div className="skills">
             <Overlay />
-            <Title title="Skills" />
+            <Title title="Hard Skills" />
             <div className="skills_content">
                 {skillKeys.map((key, index) => (
                     <Skill key={index} skillKey={key} />
                 ))}
             </div>
         </div>
+        </>
     );
 };
