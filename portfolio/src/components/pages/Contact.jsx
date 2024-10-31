@@ -21,7 +21,6 @@ export const Contact = () => {
     };
 
     const onSubmit = (values, {resetForm}) => { // Handle form submission here
-        console.log(values);
         emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, {
             to_name: 'Mahmoud',
             user_name: values.user_name,
