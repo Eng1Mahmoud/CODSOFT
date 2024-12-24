@@ -41,9 +41,7 @@ const SignIn = () => {
           setError({ exist: true, message: response.data.message });
         }, 1000);
       }
-    } catch (error) {
-      console.error("Error signing up:", error);
-    }
+    } catch (error) {}
   };
   return (
     <section className="signin">

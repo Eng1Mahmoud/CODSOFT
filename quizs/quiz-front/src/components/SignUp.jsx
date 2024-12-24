@@ -65,9 +65,7 @@ const SignUpForm = () => {
           navigate("/verifycode");
         }, 1000);
       }
-    } catch (error) {
-      console.error("Error signing up:", error);
-    }
+    } catch (error) {}
   };
   return (
     <section className="signup">

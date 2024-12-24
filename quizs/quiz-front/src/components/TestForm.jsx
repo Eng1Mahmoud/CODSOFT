@@ -116,9 +116,7 @@ const TestForm = () => {
             setTestName("");
             setAddedTest({added: res.data.added, message: res.data.message});
             setLoading(false);
-        } catch (error) {
-            console.error("Error:", error.message);
-        }
+        } catch (error) {}
     };
 
     useEffect(() => {

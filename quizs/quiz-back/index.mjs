@@ -18,10 +18,8 @@ app.use(express.json());
  mongoose
   .connect(process.env.DBURL,{  useNewUrlParser: true,
     dbName: 'Quiz'}).then(() => {
-    console.log("connected to db");
   })
-  .catch((err) => console.log(err)); 
-
+  
   // api
 
   app.use("/api", userRoute)

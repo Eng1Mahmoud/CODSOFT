@@ -4,10 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const AddTest = async (req, res) => {
-    console.log(process.env.JWT_SECRET)
   const { testName, questions } = req.body;
-
-console.log(req.user,"id")
   const test = new Test({
     testName,
     questions,
@@ -26,11 +23,11 @@ console.log(req.user,"id")
 export const getAllTests = async (req, res) => {
   try {
     const tests = await Test.find().populate("publisher");
-    console.log(tests)
+
     res.status(200).json(tests);
-    console.log(tests)
+
   } catch (error) {
-  console.log("error",error)
+
   }
 }
 
@@ -38,7 +35,7 @@ export const getAllTests = async (req, res) => {
 
 export const getTestById = async (req, res) => {
   const { id } = req.params;
-  console.log(id)
+
   try {
     const test = await Test.findById(id).populate("publisher");
     res.status(200).json(test);

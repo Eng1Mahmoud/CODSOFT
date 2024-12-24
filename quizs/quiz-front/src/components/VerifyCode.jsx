@@ -43,9 +43,7 @@ const Verification = () => {
       else{
         setVerifid({ verifid: true, message: response.data.message });
       }
-    } catch (error) {
-      console.error("Error signing up:", error);
-    }
+    } catch (error) {}
   };
   return (
     <section className="verification">

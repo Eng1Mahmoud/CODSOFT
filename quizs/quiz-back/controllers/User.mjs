@@ -8,12 +8,10 @@ const SALT = process.env.SALT;
 // signUp  function
 export const createUser = async (req, res) => {
   const { fullName, email, password, age } = req.body;
-  console.log(req.body);
   User.findOne({ email })
     .then((user) => {
       if (user) {
         res.json({ exist: true, message: "user already exists" });
-        console.log(user);
       } else {
         const verification_code = Math.random()
           .toString(10)
@@ -27,7 +25,7 @@ export const createUser = async (req, res) => {
         });
       }
     })
-    .catch((err) => console.log(err.message));
+    .catch((err) =>{});
 };
 
 // verification code function
@@ -38,13 +36,11 @@ export const verification = (req, res) => {
     const users = new User(user);
 
     bcrypt.hash(user.password, SALT, (err, hash) => {
-      if (err) {
-        console.log(err);
-      }
+  
       users.password = hash;
-      console.log(hash);
+     
       users.save().then((result) => {
-        console.log("User added", result);
+       
         res.json({
           verification: true,
           message: "user added successfully",
@@ -61,7 +57,7 @@ export const verification = (req, res) => {
 
 export const login = (req, res) => {
     const { email, password } = req.body;
-  console.log(req.body);
+ 
     User.findOne({ email })
       .then((user) => {
         if (!user) {
@@ -81,7 +77,7 @@ export const login = (req, res) => {
         });
       })
       .catch((err) => {
-        console.log(err);
+      
         res.json({ message: "An error occurred" });
       });
   };
@@ -91,5 +87,5 @@ export const login = (req, res) => {
       .then((users) => {
         res.json({ userName: users.fullName});
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {});
   };

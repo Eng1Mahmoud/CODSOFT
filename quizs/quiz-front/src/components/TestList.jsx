@@ -28,9 +28,7 @@ const TestList = () => {
 
         setTests(response.data);
         setLoading(false);
-      } catch (error) {
-        console.error("Error fetching tests:", error);
-      }
+      } catch (error) {}
     };
 
     fetchTests();
